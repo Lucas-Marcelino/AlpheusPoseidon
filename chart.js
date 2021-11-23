@@ -1,8 +1,15 @@
-const Producao = document.getElementById('Producao').getContext('2d');
+//const Producao = document.getElementById('Producao').getContext('2d');
 const Erros = document.getElementById('Erros').getContext('2d');
-const Prod = 20;
-const Err = 4;
-var myChart = new Chart(Producao, {
+let Prod = 20;
+let Err = 4;
+let On = 1;
+let Peri = 0;
+document.getElementById('Prd').innerHTML=Prod;
+document.getElementById('Er').innerHTML=Err;
+document.getElementById('Online').innerHTML=On;
+document.getElementById('Danger').innerHTML=Peri;
+
+/*var myChart = new Chart(Producao, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -31,7 +38,7 @@ var myChart = new Chart(Producao, {
     options: {
         responsive: true,
     }
-});
+});*/
 
 var myChart = new Chart(Erros, {
     type: 'bar',
