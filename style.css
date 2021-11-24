@@ -220,15 +220,13 @@ body
 .user
 {
     position: relative;
-    width: 40px;
+    width: 100px;
 }
-.user img
+.user .img
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    padding-left: 15cm;
+    position: relative;
+    display: flex;
+    padding-left: 40px;
 }
 
 .graphBox
@@ -285,6 +283,13 @@ body
     {
         grid-template-columns: repeat(2,1fr);
     }
+    .user.img
+    {
+        width: 300px;
+        left: 0;
+        right: 0;
+    }
+
 }
 
 @media (max-width: 468px)
