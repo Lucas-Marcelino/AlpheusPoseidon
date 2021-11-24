@@ -217,6 +217,20 @@ body
     color: var(--white);
 }
 
+.user
+{
+    position: relative;
+    width: 40px;
+}
+.user img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding-left: 15cm;
+}
+
 .graphBox
 {
     position: relative;
